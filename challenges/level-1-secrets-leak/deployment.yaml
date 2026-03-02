@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vulnerable-app
+  namespace: level-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vulnerable-app
+  template:
+    metadata:
+      labels:
+        app: vulnerable-app
+    spec:
+      containers:
+      - name: app
+        image: alpine:3.19
+        command: ["sleep", "infinity"]
+        env:
+        - name: DB_PASSWORD
+          value: "HTK{f0und_s3cr3t_1n_env_vars}"

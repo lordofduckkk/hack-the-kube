@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rbac-test-pod
+  namespace: level-3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rbac-test
+  template:
+    metadata:
+      labels:
+        app: rbac-test
+    spec:
+      serviceAccountName: developer-sa
+      containers:
+      - name: tools
+        image: alpine:3.19
+        command: ["sleep", "infinity"]
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "200m"

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: level-2
+  labels:
+    difficulty: intermediate
+    description: privileged-container-escape

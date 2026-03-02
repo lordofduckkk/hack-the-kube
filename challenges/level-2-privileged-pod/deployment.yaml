@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: escape-pod
+  namespace: level-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: escape-pod
+  template:
+    metadata:
+      labels:
+        app: escape-pod
+    spec:
+      containers:
+      - name: escape
+        image: alpine:3.19
+        command: ["sleep", "infinity"]
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - name: host-root
+          mountPath: /host
+      volumes:
+      - name: host-root
+        hostPath:
+          path: /tmp/hack-the-kube
+          type: DirectoryOrCreate

@@ -1,0 +1,25 @@
+# Секреты и флаги
+**/flag.txt
+**/*.env
+*.key
+*.pem
+
+# Локальные конфиги
+kubeconfig*
+*.local.yaml
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Логи
+*.log
+
+# MIREA config
+.mirea-config

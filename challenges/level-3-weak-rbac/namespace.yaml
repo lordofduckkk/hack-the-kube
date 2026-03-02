@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: level-3
+  labels:
+    difficulty: advanced
+    description: rbac-escalation
