@@ -15,8 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: alpine:3.19
-        command: ["sleep", "infinity"]
+        image: nginx:alpine
         env:
         - name: DB_PASSWORD
           value: "HTK{f0und_s3cr3t_1n_env_vars}"

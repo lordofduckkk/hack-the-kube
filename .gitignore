@@ -1,25 +1,18 @@
-# Секреты и флаги
+# 🔐 Секреты и флаги
 **/flag.txt
 **/*.env
 *.key
 *.pem
-
-# Локальные конфиги
 kubeconfig*
 *.local.yaml
 
-# Python
+# 🗑️ Временные файлы
 __pycache__/
 *.pyc
-venv/
+*.log
+tmp/
 
-# IDE
+# 💻 IDE
 .idea/
 .vscode/
 *.swp
-
-# Логи
-*.log
-
-# MIREA config
-.mirea-config

@@ -18,7 +18,3 @@ spec:
       - name: tools
         image: alpine:3.19
         command: ["sleep", "infinity"]
-        resources:
-          limits:
-            memory: "256Mi"
-            cpu: "200m"

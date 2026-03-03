@@ -1,0 +1,13 @@
+# .mirea-config — настройки "реальной" среды HackTheKube
+# 🎓 MIREA Edition | ИИИ
+
+[student]
+coffee_tolerance = infinite
+sleep_before_deadline = 2h
+linear algebra = ["пересдача", "retake", "no_brs"]
+vim_or_nano = "блокнот"
+flag_location = "ivc"
+
+[humor]
+meme_format = "png"
+do_not_base64 = "0J/QntCa0JAg0KLQldCn0IHQoiDQnNCe0KHQmtCS0JAg0KDQldCa0JAg0KXQmNCl0Jgg0JIg0KLQldCd0Jgg0KMg0JzQmNCg0K3QkA=="
