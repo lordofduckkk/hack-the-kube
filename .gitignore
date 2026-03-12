@@ -1,4 +1,4 @@
-# 🔐 Секреты и флаги
+#Секреты и флаги
 **/flag.txt
 **/*.env
 *.key
@@ -6,13 +6,14 @@
 kubeconfig*
 *.local.yaml
 
-# 🗑️ Временные файлы
+
+#Временные файлы
 __pycache__/
 *.pyc
 *.log
 tmp/
 
-# 💻 IDE
+#Ide
 .idea/
 .vscode/
 *.swp
