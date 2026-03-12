@@ -4,24 +4,24 @@ CLUSTER_NAME := hack-the-kube
 KIND_CONFIG := cluster/kind-config.yaml
 
 help:
-	@echo "🎯 HackTheKube — команды:"
+	@echo "HackTheKube — команды:"
 	@echo "  make up    - Создать кластер"
 	@echo "  make down  - Удалить кластер"
 	@echo "  make reset - Пересоздать"
 	@echo "  make test  - Проверка"
 
 up:
-	@echo "🚀 Создание кластера..."
+	@echo "Создание кластера..."
 	@kind create cluster --config $(KIND_CONFIG) --name $(CLUSTER_NAME)
-	@echo "✅ Готово!"
+	@echo "Готово!"
 
 down:
-	@echo "🗑️  Удаление..."
+	@echo "Удаление"
 	@kind delete cluster --name $(CLUSTER_NAME)
-	@echo "✅ Удалено"
+	@echo "Удалено"
 
 reset: down up
 
 test:
 	@kubectl get nodes
-	@echo "✅ Тест пройден"
+	@echo "Тест пройден"
