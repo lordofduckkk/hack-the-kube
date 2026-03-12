@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "🚀 Развертывание сценариев..."
+echo "Развертывание сценариев..."
 
 # Level 1
 kubectl apply -f challenges/level-1-secrets-leak/namespace.yaml
@@ -15,4 +15,4 @@ kubectl apply -f challenges/level-3-weak-rbac/rbac.yaml
 kubectl apply -f challenges/level-3-weak-rbac/flag-secret.yaml
 kubectl apply -f challenges/level-3-weak-rbac/deployment.yaml
 
-echo "✅ Готово"
+echo "Готово"
