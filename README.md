@@ -1,8 +1,8 @@
-# 🛡️ HackTheKube
+# HackTheKube
 
 Учебный стенд по безопасности Kubernetes для отработки навыков атаки и защиты.
 
-## 🚀 Быстрый старт
+## Быстрый старт
 
 ### Требования
 - Docker 20.10+
@@ -24,15 +24,15 @@ kubectl apply -f challenges/level-2-privileged-pod/
 kubectl apply -f challenges/level-3-weak-rbac/
 ```
 
-## 🎯 Уровни
+## Уровни
 
 | Уровень | Название | Уязвимость | Время |
 |---------|----------|------------|-------|
-| 🟢 Level 1 | Secrets Leak | CWE-312 | 15 мин |
-| 🟡 Level 2 | Privileged Escape | CWE-250 | 30 мин |
-| 🔴 Level 3 | RBAC Escalation | CWE-269 | 45 мин |
+| Level 1 | Secrets Leak | CWE-312 | 15 мин |
+| Level 2 | Privileged Escape | CWE-250 | 30 мин |
+| Level 3 | RBAC Escalation | CWE-269 | 45 мин |
 
-## 🧪 Валидация флагов
+## Валидация флагов
 
 ```bash
 # Уровень 1
@@ -45,7 +45,7 @@ bash challenges/level-2-privileged-pod/validate.sh "HTK{...}"
 bash challenges/level-3-weak-rbac/validate.sh "HTK{...}"
 ```
 
-## 🗑️ Очистка
+## Очистка
 
 ```bash
 # Удалить кластер
@@ -55,7 +55,7 @@ make down
 kind delete clusters --all
 ```
 
-## 📁 Структура
+## Структура
 
 ```
 hack-the-kube/
@@ -70,6 +70,6 @@ hack-the-kube/
 └── README.md
 ```
 
-## 📄 Лицензия
+## Лицензия
 
 MIT
