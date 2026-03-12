@@ -7,14 +7,10 @@ FLAGS = {
     "level-3": "HTK{rb4c_3sc4l4t10n_clust3r_4dm1n}",
 }
 
-if len(sys.argv) != 3:
-    print("Использование: check-flag.py <level> <flag>")
-    sys.exit(1)
-
 level, flag = sys.argv[1], sys.argv[2]
 if flag == FLAGS.get(level):
-    print("✅ Верно")
+    print("Верно")
     sys.exit(0)
 else:
-    print("❌ Неверно")
+    print("Неверно")
     sys.exit(1)
